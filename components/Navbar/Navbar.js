@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Image from "next/image";
-import globe from '../../public/globe.png'
+import globe from '../../public//Assets/Images/globe.png'
 import styles from "../../styles/Navbar.module.css";
 
 function Navbar() {
