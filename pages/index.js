@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import Navbar from "../components/Navbar/Navbar.js"
+import Navbar from "../components/Navbar/Navbar.js";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
 
       <section className={styles.main}>
-        <Navbar/>
+        <Navbar />
         <h1 className={styles["mainheading"]}>
           Unlimited movies, TV <br />
           shows, and more.
@@ -53,6 +53,96 @@ export default function Home() {
               ></path>
             </svg>
           </button>
+        </div>
+      </section>
+
+      {/* <hr /> */}
+
+      <section className={styles["containers"]}>
+        <div className={styles["containers-content"]}>
+          <div
+            className={`${styles["container-indiv"]} ${styles["container-text"]}`}
+          >
+            <h1 className={`${styles["containers-heading"]} ${styles.yellow}`}>
+              Enjoy on your TV.
+            </h1>
+            <p
+              className={`${styles["containers-description"]} ${styles.yellow}`}
+            >
+              Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV,
+              Blu-ray players and more.
+            </p>
+          </div>
+          <div
+            className={`${styles["container-indiv"]} ${styles["image-container"]}`}
+          >
+            <img
+              className={styles["container-images"]}
+              src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+              alt="Image here"
+            />
+            <div className={styles["container-videos"]}>
+              <video
+                autoplay="true"
+                playsinline="true"
+                muted="true"
+                loop="true"
+                src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                type="video/mp4"
+              ></video>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* <hr /> */}
+
+      <section>
+        <div>
+          <img src="" alt="" />
+        </div>
+        <div>
+          <h1 className={`${styles["containers-heading"]} ${styles.yellow}`}>
+            Download your shows to watch offline.
+          </h1>
+          <p className={`${styles.description} ${styles.yellow}`}>
+            Save your favourites easily and always have something to watch.
+          </p>
+        </div>
+      </section>
+
+      {/* <hr /> */}
+
+      <section className={styles["containers"]}>
+        <div>
+          <h1 className={`${styles.description} ${styles.yellow}`}>
+            Watch everywhere
+          </h1>
+          <p className={`${styles.description} ${styles.yellow}`}>
+            Stream unlimited movies and TV shows on your phone, tablet, laptop,
+            and TV.
+          </p>
+        </div>
+        <div>
+          <img
+            src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile-in.png"
+            alt="Image here"
+          />
+        </div>
+      </section>
+
+      {/* <hr /> */}
+
+      <section className={styles["containers"]}>
+        <div></div>
+        <div>
+          <h1 className={`${styles.description} ${styles.yellow}`}>
+            Create profiles for children.
+          </h1>
+          <p className={`${styles.description} ${styles.yellow}`}>
+            Send children on adventures with their favourite characters in a
+            space made just for them—free with your membership.
+          </p>
         </div>
       </section>
     </div>
